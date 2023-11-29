@@ -4,17 +4,16 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in site.posts limit:1 %}
   <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}<span>.</span>
-      </a>
-    </h1>
+    <h1 class="post-title">Hello World</h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    <p>My name is Steve Agalloco.  I live in Charlotte, NC with my wife, our three children and our Cavalier King Charles Spaniel. I'm a yankee transplant living in the south - the weather is nice and the people are too. I am a software engineering manager at <a href="https://www.creditkarma.com">Credit Karma</a>. Previously I was Co-founder and VP of Enginering at <a href="https://tradier.com">Tradier</a> and worked on the much beloved podcast app Breaker (RIP). Outside of work, My head is often in the clouds, but when on the ground I'm obsessed with Hilton Head Island, golf, podcasts, music and my family. I Love long walks on the beach with my dog.</p>
   </div>
+  
+  <h2>Recent Posts</h2>
+  <ul>
+  {% for post in site.posts limit:5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+  </ul>
 </div>
