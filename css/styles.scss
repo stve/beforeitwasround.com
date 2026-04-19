@@ -3,11 +3,11 @@
 ---
 
 // poole + hyde
-@import "vendor/poole";
-@import "vendor/hyde";
+@use "vendor/poole";
+@use "vendor/hyde";
 
 // customizations
-@import "core/colors";
-@import "core/calluna";
-@import "core/soaked";
-@import "core/syntax";
+@use "core/colors";
+@use "core/calluna";
+@use "core/soaked";
+@use "core/syntax";
