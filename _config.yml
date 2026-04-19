@@ -26,9 +26,9 @@ exclude:
   - script
   - _drafts
   - design
-  - node_modules
-  - bower_components
-  - bower.json
+  - netlify.toml
+  - CLAUDE.md
+  - redirects.json
 
 feed:
   path: atom.xml

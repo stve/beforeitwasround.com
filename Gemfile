@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'github-pages'
-end
+# group :development do
+#   gem 'github-pages'
+# end
 
-gem "jekyll"
+gem "jekyll", "~> 4.2"
+
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-redirect-from"
+gem "jekyll-seo-tag"
